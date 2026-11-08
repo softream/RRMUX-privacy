@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RRM UX — 개인정보 처리방침 / Privacy Policy</title>
+<style>
+  body { font-family: "Segoe UI", "Malgun Gothic", "Noto Sans KR", sans-serif; max-width: 860px; margin: 0 auto; padding: 32px 20px 60px; line-height: 1.7; color: #1f2328; }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 34px; border-bottom: 1px solid #d0d7de; padding-bottom: 4px; }
+  h3 { font-size: 16px; margin-top: 22px; }
+  .meta { color: #57606a; font-size: 14px; }
+  .lang { margin: 18px 0 8px; font-size: 14px; }
+  .lang a { margin-right: 14px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 10px 0; }
+  th, td { border: 1px solid #d0d7de; padding: 7px 9px; vertical-align: top; text-align: left; }
+  th { background: #f6f8fa; }
+  .box { background: #f6f8fa; border-left: 4px solid #0969da; padding: 10px 14px; margin: 14px 0; }
+  hr { margin: 48px 0; border: 0; border-top: 2px solid #d0d7de; }
+</style>
+</head>
+<body>
+
+<h1>RRM UX 개인정보 처리방침</h1>
+<div class="meta">시행일: 2026년 11월 9일 · 버전 1 · 개발자: Kwack KS (대한민국)</div>
+<div class="lang"><a href="#ko">한국어</a><a href="#en">English</a></div>
+
+<section id="ko">
+<div class="box"><strong>요약</strong> — RRM UX는 개인정보를 개발자에게 보내지 않습니다. 회원가입, 광고, 사용 통계, 원격 서버가 없습니다. 모든 설정은 사용자의 PC에만 저장됩니다. “전역 확장” 기능은 사용자가 동의하고 켠 경우에만, 사용자가 고른 앱에서 입력하는 키를 메모리에서 잠시 확인하며 저장하거나 전송하지 않습니다.</div>
+
+<h2>1. 적용 범위</h2>
+<p>이 방침은 Microsoft Store에서 배포되는 Windows용 앱 “RRM UX”(Global Expander Edition)에 적용됩니다. RRM UX는 가상 키보드와 텍스트 확장(단축어) 기능으로 문서나 판독문 작성을 돕는 데스크톱 앱입니다.</p>
+
+<h2>2. 개발자가 수집하는 개인정보</h2>
+<p>개발자는 RRM UX를 통해 <strong>어떠한 개인정보도 수집·전송·보관하지 않습니다</strong>. 앱에는 계정, 로그인, 광고, 분석(analytics), 오류 보고 전송 기능이 없고, 앱이 개발자 서버와 통신하지 않습니다.</p>
+
+<h2>3. 사용자 PC 안에서만 처리되는 정보</h2>
+<table>
+  <tr><th>정보</th><th>목적</th><th>저장 위치 · 기간</th></tr>
+  <tr><td>앱 설정 (탭, 키, 단축어, 테마 등)</td><td>앱 기능 제공</td><td>사용자 PC의 설정 파일(<code>rrm_settings.json</code>). 사용자가 삭제하거나 앱의 전체 초기화(R) 또는 앱 삭제 시까지</td></tr>
+  <tr><td>전역 확장 설정 (켜짐 여부, 대상 앱 이름, 치환·감지 방식, 동의 버전과 날짜)</td><td>전역 확장 기능 제공, 동의 기록</td><td>사용자 PC의 <code>rrm_ux_global.json</code>. 위와 같음</td></tr>
+  <tr><td>편집창에 입력한 글</td><td>문서 작성</td><td>앱이 실행되는 동안 메모리에만. 사용자가 복사하거나 내보내기(Export)한 경우 사용자가 정한 위치</td></tr>
+  <tr><td>내보내기/가져오기 파일, 탭 배경 이미지</td><td>사용자가 직접 고른 파일 읽기·쓰기</td><td>사용자가 정한 위치</td></tr>
+</table>
+
+<h2>4. 전역 확장 기능 (다른 앱에서 단축어 쓰기)</h2>
+<p>이 기능은 <strong>기본적으로 꺼져 있으며</strong>, 처음 켤 때 앱 안에서 아래 내용을 보여주고 사용자가 “동의하고 켜기”를 눌러야 동작합니다.</p>
+<ul>
+  <li><strong>키 입력 확인</strong>: 사용자가 대상 앱으로 고른 앱이 맨 앞에 있을 때만, 단축어를 찾기 위해 입력하는 키를 확인합니다. 최근 80글자만 메모리에 두며, 파일로 저장하거나 기록하거나 전송하지 않습니다. 다른 앱이나 기능이 꺼져 있을 때는 확인하지 않습니다.</li>
+  <li><strong>입력칸 정보</strong>: 맨 앞 앱의 실행 파일 이름, 커서가 있는 입력칸의 종류와 비밀번호 칸 여부를 Windows 기능(UI Automation 등)으로 확인합니다. 설정에서 UI Automation 사용을 끌 수 있습니다. “Direct replace” 또는 “Read the text box” 방식을 쓸 때는 확장 순간 커서 바로 앞의 글자를 메모리에서 읽습니다.</li>
+  <li><strong>클립보드</strong>: 클립보드 방식(또는 자동 대체)으로 확장할 때 클립보드를 잠깐 사용하고, 원래 있던 텍스트를 되돌려 놓습니다. 이때 Windows 클립보드 기록·동기화에 남지 않도록 표시합니다.</li>
+  <li><strong>비밀번호 칸</strong>에서는 동작하지 않습니다.</li>
+  <li>사용자는 앱의 스위치나 트레이 아이콘으로 언제든 끄거나 일시 정지할 수 있고, “What is collected”에서 동의를 철회할 수 있습니다.</li>
+</ul>
+
+<h2>5. 민감한 정보 (건강 정보)</h2>
+<p>사용자가 판독문 등에 입력하는 글에는 환자의 건강 정보 같은 민감한 정보가 포함될 수 있습니다. RRM UX는 이를 사용자 PC 안에서만 처리하며, 개발자나 제3자에게 보내지 않습니다. 의료기관에서 사용하는 경우, 해당 정보의 관리 책임과 관련 법령(예: 개인정보 보호법, 의료법) 준수는 사용 기관과 사용자에게 있습니다.</p>
+
+<h2>6. 제3자 제공 · 처리 위탁 · 국외 이전</h2>
+<p>개발자는 개인정보를 처리하지 않으므로 제3자 제공, 처리 위탁, 국외 이전이 없습니다. 앱 설치·업데이트·결제는 Microsoft Store가 처리하며, 이 과정의 정보는 <a href="https://privacy.microsoft.com/">Microsoft 개인정보처리방침</a>을 따릅니다.</p>
+
+<h2>7. 인터넷 연결</h2>
+<p>RRM UX는 사용자가 앱 안의 링크(이 방침 등)를 누를 때 기본 브라우저를 여는 것 외에는 인터넷을 사용하지 않습니다. 사용 설명서는 앱 안에 포함되어 오프라인으로 열립니다.</p>
+
+<h2>8. 정보의 삭제와 사용자의 권리</h2>
+<p>모든 정보가 사용자 PC에만 있으므로 사용자가 직접 관리할 수 있습니다. 앱의 R(전체 초기화) 버튼은 설정과 전역 확장 동의 기록을 지웁니다. 앱을 삭제하면 앱 데이터 폴더도 Windows가 함께 삭제합니다. 개발자는 사용자 정보를 갖고 있지 않으므로 열람·정정·삭제 요청에 대해 제공할 정보가 없지만, 문의에는 답합니다.</p>
+
+<h2>9. 아동</h2>
+<p>RRM UX는 아동을 대상으로 하지 않으며, 아동의 정보를 수집하지 않습니다.</p>
+
+<h2>10. 안전성 확보 조치</h2>
+<p>키 입력은 메모리에서만 다루고 디스크에 쓰지 않습니다. 비밀번호 칸은 제외합니다. 전역 확장은 사용자 동의와 대상 앱 선택이 있을 때만 동작합니다.</p>
+
+<h2>11. 방침의 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다. 전역 확장이 확인하는 정보가 바뀌는 경우에는 앱 안에서 다시 동의를 받습니다.</p>
+
+<h2>12. 문의</h2>
+<p>개인정보 보호 책임자: Kwack KS<br>이메일: <strong>[x e n o g u m a @ g m a i l]</strong></p>
+</section>
+
+<hr>
+
+<section id="en">
+<h1>RRM UX Privacy Policy</h1>
+<div class="meta">Effective date: November __, 2026 · Version 1 · Developer: Kwack KS (Republic of Korea)</div>
+
+<div class="box"><strong>Summary</strong> — RRM UX does not send any personal information to the developer. There is no sign-up, no advertising, no usage analytics and no remote server. All settings are stored only on your PC. The “Global Expander” feature works only after you agree and turn it on; it briefly checks the keys you type in the apps you select, in memory only, and never saves or sends them.</div>
+
+<h2>1. Scope</h2>
+<p>This policy applies to the Windows app “RRM UX” (Global Expander Edition) distributed through the Microsoft Store. RRM UX is a desktop app that helps you write documents and reports with a virtual keyboard and text-expansion shortcuts.</p>
+
+<h2>2. Information the developer collects</h2>
+<p>The developer <strong>does not collect, receive or keep any personal information</strong> through RRM UX. The app has no account, login, advertising, analytics or crash-report upload, and it does not communicate with any developer server.</p>
+
+<h2>3. Information processed only on your PC</h2>
+<table>
+  <tr><th>Information</th><th>Purpose</th><th>Where and how long</th></tr>
+  <tr><td>App settings (tabs, keys, shortcuts, theme, etc.)</td><td>Providing the app’s features</td><td>A settings file on your PC (<code>rrm_settings.json</code>), until you delete it, use Reset (R), or uninstall the app</td></tr>
+  <tr><td>Global expander settings (on/off, target app names, replace and detection methods, consent version and date)</td><td>Providing the global expander; recording your consent</td><td><code>rrm_ux_global.json</code> on your PC, same as above</td></tr>
+  <tr><td>Text you write in the text box</td><td>Writing documents</td><td>Memory only while the app runs; wherever you put it if you copy or export it</td></tr>
+  <tr><td>Export/import files, tab background images</td><td>Reading and writing files you choose</td><td>Locations you choose</td></tr>
+</table>
+
+<h2>4. Global Expander (shortcuts in other apps)</h2>
+<p>This feature is <strong>off by default</strong>. The first time you turn it on, the app shows the following and the feature starts only after you press “Agree and turn on”.</p>
+<ul>
+  <li><strong>Typed keys</strong>: only while an app you selected as a target is in front, the keys you type are checked to detect your shortcuts. Only the last 80 characters are kept, in memory only; they are never saved to disk, logged or sent. Nothing is checked in other apps or while the feature is off.</li>
+  <li><strong>Text field information</strong>: the program name of the front app, the type of the focused text field and whether it is a password field are checked through Windows features (such as UI Automation). You can turn off UI Automation in the settings. With “Direct replace” or “Read the text box”, the text just before the cursor is read in memory at the moment of expansion.</li>
+  <li><strong>Clipboard</strong>: when expanding by clipboard (or as an automatic fallback), the clipboard is used briefly and your previous text is put back. The temporary content is marked so that it is not kept in Windows clipboard history or sync.</li>
+  <li><strong>Password fields</strong> are never expanded.</li>
+  <li>You can turn the feature off or pause it at any time with the switch or the tray icon, and withdraw consent under “What is collected”.</li>
+</ul>
+
+<h2>5. Sensitive information (health information)</h2>
+<p>Text you type, for example in a medical report, may contain sensitive information such as patient health information. RRM UX processes it only on your PC and never sends it to the developer or any third party. When used in a healthcare organization, that organization and its users remain responsible for managing such information and for complying with applicable laws.</p>
+
+<h2>6. Sharing, processors and international transfers</h2>
+<p>Because the developer does not process personal information, there is no sharing with third parties, no use of processors and no international transfer. Installation, updates and payments are handled by the Microsoft Store under the <a href="https://privacy.microsoft.com/">Microsoft Privacy Statement</a>.</p>
+
+<h2>7. Internet use</h2>
+<p>RRM UX does not use the internet, except to open your default browser when you click a link in the app (such as this policy). The user manual is built into the app and opens offline.</p>
+
+<h2>8. Deleting information and your rights</h2>
+<p>All information stays on your PC, so you control it directly. The app’s Reset (R) button clears settings and the global expander consent record. Uninstalling the app removes its app data folder. The developer holds no information about you, so there is nothing to access, correct or delete on request, but we will answer any question.</p>
+
+<h2>9. Children</h2>
+<p>RRM UX is not directed to children and does not collect children’s information.</p>
+
+<h2>10. Security</h2>
+<p>Typed keys are handled only in memory and never written to disk. Password fields are excluded. The global expander works only with your consent and only in the apps you select.</p>
+
+<h2>11. Changes</h2>
+<p>If this policy changes, the new version will be posted on this page with a new effective date. If the information checked by the global expander changes, the app will ask for your consent again.</p>
+
+<h2>12. Contact</h2>
+<p>Privacy contact: Kwack KS<br>Email: <strong>[x e n o g u m a @ g m a i l]</strong></p>
+</section>
+
+</body>
+</html>
